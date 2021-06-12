@@ -3,9 +3,10 @@ body{
 }
 #banner-part{
   background: url('../images/bg-1.png') no-repeat center;
+  height: 100vh;
 }
 #phone-part{
-  padding: 80px 0;
+  padding-bottom: 80px;
   background: url('../images/bg-2.png') no-repeat 1% 0;
 }
 #categories{
@@ -37,12 +38,19 @@ body{
 .nav-item{
   margin-left: 1.5rem;
 }
+.carousel-indicators{
+  bottom: -80px;
+}
 #banner-part .carousel-indicators button{
-  width: 30px;
+  width: 10px;
   border-top: 0;
   height: 0;
   border-radius: 15px;
-  background: yellow;
+  background: #000;
+}
+#banner-part .carousel-indicators .active{
+  width: 30px;
+  background-color: orange;
 }
 .card{
   padding: 20px;
@@ -76,7 +84,7 @@ body{
   height: 6px;
   border-radius: 5px;
   width: 100px;
-  background: linear-gradient(#FF8C00, #FFA500);
+  background-color: orange;
   margin: 0 auto;
   margin-top: 10px;
   content: '';
@@ -102,6 +110,12 @@ body{
 }
 
 @media(max-width: 992px){
+  .banner-title{
+   margin-top: 2rem;
+  }
+  .banner-title + p{
+    width: 100%;
+  }
   #categories .img {
     margin: 0 auto;
   }
