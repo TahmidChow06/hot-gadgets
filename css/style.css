@@ -1,0 +1,108 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+#banner-part{
+  background: url('../images/bg-1.png') no-repeat center;
+}
+#phone-part{
+  padding: 80px 0;
+  background: url('../images/bg-2.png') no-repeat 1% 0;
+}
+#categories{
+  padding: 80px 0;
+}
+.banner-title{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.banner-title + p{
+  width: 61%;
+  line-height: 30px;
+}
+.buy-btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+.buy-btn i{
+  font-size: 14px;
+}
+.nav-item{
+  margin-left: 1.5rem;
+}
+#banner-part .carousel-indicators button{
+  width: 30px;
+  border-top: 0;
+  height: 0;
+  border-radius: 15px;
+  background: yellow;
+}
+.card{
+  padding: 20px;
+}
+.card-footer{
+  border: none;
+  background: #fff;
+  margin: 0 auto;
+}
+.price{
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+#laptop-part{
+  padding: 80px 0;
+}
+.c-al{
+  color: orange;
+  font-weight: 500;
+}
+.card{
+  border: none;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+.category{
+  margin-bottom: 80px;
+  position: relative;
+}
+.category:after{
+  display: block;
+  height: 6px;
+  border-radius: 5px;
+  width: 100px;
+  background: linear-gradient(#FF8C00, #FFA500);
+  margin: 0 auto;
+  margin-top: 10px;
+  content: '';
+}
+#categories .perfume{
+  margin-bottom: 30px;
+}
+#categories .img{
+  width: 190px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 40px lightgrey;
+  flex-direction: column;
+}
+#categories .img img{
+  width: 50%;
+  margin-bottom: 1rem;
+}
+#categories .shoes img{
+  margin-bottom: 0;
+}
+
+@media(max-width: 992px){
+  #categories .img {
+    margin: 0 auto;
+  }
+}
